@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style>
+    /* CSS styles for the transition link */
+    .transition_link {
+      font-family: arial, sans-serif;
+      padding: 8px;
+      margin: 4px;
+      color: white;
+      background-color: deeppink;
+      border-style: outset;
+      border-radius: 8px;
+      text-decoration: none;
+      width: 8em;
+      display: inline-block;
+      font-size: medium;
+      transition: all 2s; /* Apply the transition to all properties */
+    }
+
+    .transition_link:hover {
+      color: lightpink;
+      background-color: white;
+      width: 16em;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header"></h1>
+
+  <a href="#" class="transition_link">Connecting Moments, Creating Memories</a>
+
+  <p id="butterfly">&#x1F98B;</p>
+
+  <script src="src/script.js"></script>
+
+  <style>
+    /* CSS for the animated butterfly */
+    #butterfly {
+      font-size: 100pt;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      animation-name: flight;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes flight {
+      33% {
+        left: 500px;
+      }
+
+      66% {
+        top: 350px;
+        font-size: 180pt;
+      }
+
+      100% {
+        left: 50px;
+        top: 50px;
+        font-size: 100pt;
+      }
+    }
+  </style>
+</body>
+
+<title>Minnsota Quest</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+
+.mySlides {display:none}
+
+.w3-tag, .fa {cursor:pointer}
+
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Content -->
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+
+
+ <div class="w3-panel">
+
+ <style>
+        h1 {
+            color: deeppink;
+            font-family: "Modern Love Grunge", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Minnesota Quest</b></h1>
+
+ <p>Connecting Moments, Creating Memories</p>
+ 
+ <h4>Minnesota Quest is your one-stop destination for discovering a wide range of events catering to diverse audiences. Whether you're planning a family outing, a romantic date night, or seeking exciting activities for students and teenagers, this website has you covered. With a comprehensive listing of upcoming seasonal events, it's the perfect resource to stay informed and make the most of your holidays.</h4>
+
+ </div>
+
+
+
+ <!-- Slideshow -->
+
+ <div class="w3-container">
+
+ <div class="w3-display-container mySlides">
+
+ <img src="friends.jpg" style="width:100%">
+
+ <div class="w3-display-topleft w3-container w3-padding-32">
+
+ <span class="w3-white w3-padding-large w3-animate-bottom">celebrate your friends</span>
+
+ </div>
+
+ </div>
+
+ <div class="w3-display-container mySlides">
+
+ <img src="dinner.jpg" style="width:100%">
+
+ <div class="w3-display-middle w3-container w3-padding-32">
+
+ <span class="w3-white w3-padding-large w3-animate-bottom">celebrate your significant other</span>
+
+ </div>
+
+ </div>
+
+ <div class="w3-display-container mySlides">
+
+ <img src="kids.jpg" style="width:100%">
+
+ <div class="w3-display-topright w3-container w3-padding-32">
+
+ <span class="w3-white w3-padding-large w3-animate-bottom">celebrate your kids</span>
+
+ </div>
+
+ </div>
+
+
+
+ <!-- Slideshow next/previous buttons -->
+
+ <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+
+ <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+
+ <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+ 
+
+ <div class="w3-center">
+
+ <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+
+ <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+
+ <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
+ </div>
+
+ </div>
+
+ </div>
+
+
+
+
+
+<script>
+
+// Slideshow
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+
+
+function plusDivs(n) {
+
+ showDivs(slideIndex += n);
+
+}
+
+
+
+function currentDiv(n) {
+
+ showDivs(slideIndex = n);
+
+}
+
+
+
+function showDivs(n) {
+
+ var i;
+
+ var x = document.getElementsByClassName("mySlides");
+
+ var dots = document.getElementsByClassName("demodots");
+
+ if (n > x.length) {slideIndex = 1} 
+
+ if (n < 1) {slideIndex = x.length} ;
+
+ for (i = 0; i < x.length; i++) {
+
+ x[i].style.display = "none"; 
+
+ }
+
+ for (i = 0; i < dots.length; i++) {
+
+ dots[i].className = dots[i].className.replace(" w3-white", "");
+
+ }
+
+ x[slideIndex-1].style.display = "block"; 
+
+ dots[slideIndex-1].className += " w3-white";
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--LOGIN-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+
+ width: 100%;
+
+ padding: 12px 20px;
+
+ margin: 8px 0;
+
+ display: inline-block;
+
+ border: 1px solid #ccc;
+
+ box-sizing: border-box;
+
+}
+
+
+
+/* Set a style for all buttons */
+
+button {
+
+ background-color :rgb(255, 128, 192);
+
+ color: white;
+
+ padding: 14px 20px;
+
+ margin: 8px 0;
+
+ border: none;
+
+ cursor: pointer;
+
+ width: 100%;
+
+}
+
+
+
+button:hover {
+
+ opacity: 0.8;
+
+}
+
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+
+ width: auto;
+
+ padding: 10px 18px;
+
+ background-color: rgb(255, 128, 192);
+
+}
+
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+
+ text-align: center;
+
+ margin: 24px 0 12px 0;
+
+ position: relative;
+
+}
+
+
+
+img.avatar {
+
+ width: 40%;
+
+ border-radius: 50%;
+
+}
+
+
+
+.container {
+
+ padding: 16px;
+
+}
+
+
+
+span.psw {
+
+ float: right;
+
+ padding-top: 16px;
+
+}
+
+
+
+/* The Modal (background) */
+
+.modal {
+
+ display: none; /* Hidden by default */
+
+ position: fixed; /* Stay in place */
+
+ z-index: 1; /* Sit on top */
+
+ left: 0;
+
+ top: 0;
+
+ width: 100%; /* Full width */
+
+ height: 100%; /* Full height */
+
+ overflow: auto; /* Enable scroll if needed */
+
+ background-color: rgb(0,0,0); /* Fallback color */
+
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+ padding-top: 60px;
+
+}
+
+
+
+/* Modal Content/Box */
+
+.modal-content {
+
+ background-color:;
+
+ margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+
+ border: 1px solid #888;
+
+ width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+
+
+/* The Close Button (x) */
+
+.close {
+
+ position: absolute;
+
+ right: 25px;
+
+ top: 0;
+
+ color: #000;
+
+ font-size: 35px;
+
+ font-weight: bold;
+
+}
+
+
+
+.close:hover,
+
+.close:focus {
+
+ color: red;
+
+ cursor: pointer;
+
+}
+
+
+
+/* Add Zoom Animation */
+
+.animate {
+
+ -webkit-animation: animatezoom 0.6s;
+
+ animation: animatezoom 0.6s
+
+}
+
+
+
+@-webkit-keyframes animatezoom {
+
+ from {-webkit-transform: scale(0)} 
+
+ to {-webkit-transform: scale(1)}
+
+}
+
+ 
+
+@keyframes animatezoom {
+
+ from {transform: scale(0)} 
+
+ to {transform: scale(1)}
+
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+
+ span.psw {
+
+ display: block;
+
+ float: none;
+
+ }
+
+ .cancelbtn {
+
+ width: 100%;
+
+ }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h2>welcome to Minnsota Quest</h2>
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+
+<div id="id01" class="modal">
+
+ 
+
+ <form class="modal-content animate" action="/action_page.php" method="post">
+
+ <div class="imgcontainer">
+
+ <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+ <img src="img_avatar2.png" alt="Avatar" class="avatar">
+
+ </div>
+
+
+
+ <div class="container">
+
+ <label for="uname"><b>Username</b></label>
+
+ <input type="text" placeholder="Enter Username" name="uname" required>
+
+
+
+ <label for="psw"><b>Password</b></label>
+
+ <input type="password" placeholder="Enter Password" name="psw" required>
+
+ 
+
+ <button type="submit">Login</button>
+
+ <label>
+
+ <input type="checkbox" checked="checked" name="remember"> Remember me
+
+ </label>
+
+ </div>
+
+
+
+ <div class="container" style="background-color:#f1f1f1">
+
+ <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+ <span class="psw">Forgot <a href="#">password?</a></span>
+
+ </div>
+
+ </form>
+
+</div>
+
+
+
+<script>
+
+// Get the modal
+
+var modal = document.getElementById('id01');
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+
+ if (event.target == modal) {
+
+ modal.style.display = "none";
+
+ }
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--REGISTER/SIGN UP-->
+
+<!DOCTYPE html>
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<style>
+
+* {
+
+ box-sizing: border-box;
+
+}
+
+
+
+body {
+
+ background-color: #f1f1f1;
+
+}
+
+
+
+#regForm {
+
+ background-color: rgb(255, 128, 192);
+
+ margin: 100px auto;
+
+ font-family: Raleway;
+
+ padding: 40px;
+
+ width: 70%;
+
+ min-width: 300px;
+
+}
+
+
+
+h1 {
+
+ text-align: center; 
+
+}
+
+
+
+input {
+
+ padding: 10px;
+
+ width: 100%;
+
+ font-size: 17px;
+
+ font-family: Raleway;
+
+ border: 1px solid #aaaaaa;
+
+}
+
+
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+
+ background-color:rgb(255, 128, 192);
+
+}
+
+
+
+/* Hide all steps by default: */
+
+.tab {
+
+ display: none;
+
+}
+
+
+
+button {
+
+ background-color: rgb(255, 128, 192);
+
+ color: #ffffff;
+
+ border: none;
+
+ padding: 10px 20px;
+
+ font-size: 17px;
+
+ font-family: Raleway;
+
+ cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+ opacity: 0.8;
+
+ 
+
+}
+
+
+
+#prevBtn {
+
+ background-color: #bbbbbb;
+
+}
+
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+
+ height: 15px;
+
+ width: 15px;
+
+ margin: 0 2px;
+
+ background-color: #bbbbbb;
+
+ border: none; 
+
+ border-radius: 50%;
+
+ display: inline-block;
+
+ opacity: 0.5;
+
+}
+
+
+
+.step.active {
+
+ opacity: 1;
+
+}
+
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+
+ background-color: rgb(255, 128, 192);
+
+}
+
+</style>
+
+<body>
+
+
+
+<form id="regForm" action="/action_page.php">
+
+ <h1>Register:</h1>
+
+ <!-- One "tab" for each step in the form: -->
+
+ <div class="tab">Name:
+
+ <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+
+ <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+
+ </div>
+
+ <div class="tab">Contact Info:
+
+ <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+
+ <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+
+ </div>
+
+ <div class="tab">Birthday:
+
+ <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+
+ <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+
+ <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+
+ </div>
+
+ <div class="tab">Login Info:
+
+ <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+
+ <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+
+ </div>
+
+ <div style="overflow:auto;">
+
+ <div style="float:right;">
+
+ <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+
+ <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+
+ </div>
+
+ </div>
+
+ <!-- Circles which indicates the steps of the form: -->
+
+ <div style="text-align:center;margin-top:40px;">
+
+ <span class="step"></span>
+
+ <span class="step"></span>
+
+ <span class="step"></span>
+
+ <span class="step"></span>
+
+ </div>
+
+</form>
+
+
+
+<script>
+
+var currentTab = 0; // Current tab is set to be the first tab (0)
+
+showTab(currentTab); // Display the current tab
+
+
+
+function showTab(n) {
+
+ // This function will display the specified tab of the form...
+
+ var x = document.getElementsByClassName("tab");
+
+ x[n].style.display = "block";
+
+ //... and fix the Previous/Next buttons:
+
+ if (n == 0) {
+
+ document.getElementById("prevBtn").style.display = "none";
+
+ } else {
+
+ document.getElementById("prevBtn").style.display = "inline";
+
+ }
+
+ if (n == (x.length - 1)) {
+
+ document.getElementById("nextBtn").innerHTML = "Submit";
+
+ } else {
+
+ document.getElementById("nextBtn").innerHTML = "Next";
+
+ }
+
+ //... and run a function that will display the correct step indicator:
+
+ fixStepIndicator(n)
+
+}
+
+
+
+function nextPrev(n) {
+
+ // This function will figure out which tab to display
+
+ var x = document.getElementsByClassName("tab");
+
+ // Exit the function if any field in the current tab is invalid:
+
+ if (n == 1 && !validateForm()) return false;
+
+ // Hide the current tab:
+
+ x[currentTab].style.display = "none";
+
+ // Increase or decrease the current tab by 1:
+
+ currentTab = currentTab + n;
+
+ // if you have reached the end of the form...
+
+ if (currentTab >= x.length) {
+
+ // ... the form gets submitted:
+
+ document.getElementById("regForm").submit();
+
+ return false;
+
+ }
+
+ // Otherwise, display the correct tab:
+
+ showTab(currentTab);
+
+}
+
+
+
+function validateForm() {
+
+ // This function deals with validation of the form fields
+
+ var x, y, i, valid = true;
+
+ x = document.getElementsByClassName("tab");
+
+ y = x[currentTab].getElementsByTagName("input");
+
+ // A loop that checks every input field in the current tab:
+
+ for (i = 0; i < y.length; i++) {
+
+ // If a field is empty...
+
+ if (y[i].value == "") {
+
+ // add an "invalid" class to the field:
+
+ y[i].className += " invalid";
+
+ // and set the current valid status to false
+
+ valid = false;
+
+ }
+
+ }
+
+ // If the valid status is true, mark the step as finished and valid:
+
+ if (valid) {
+
+ document.getElementsByClassName("step")[currentTab].className += " finish";
+
+ }
+
+ return valid; // return the valid status
+
+}
+
+
+
+function fixStepIndicator(n) {
+
+ // This function removes the "active" class of all steps...
+
+ var i, x = document.getElementsByClassName("step");
+
+ for (i = 0; i < x.length; i++) {
+
+ x[i].className = x[i].className.replace(" active", "");
+
+ }
+
+ //... and adds the "active" class on the current step:
+
+ x[n].className += " active";
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--GROUP BUTTON-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.block {
+
+ display: block;
+
+ width: 100%;
+
+ border: none;
+
+ background-color: rgb(255, 128, 192);
+
+ color: white;
+
+ padding: 14px 28px;
+
+ font-size: 16px;
+
+ cursor: pointer;
+
+ text-align: center;
+
+}
+
+
+
+.block:hover {
+
+ background-color:deeppink;
+
+ color: black;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h2></h2>
+
+    <div class="button-container">
+        <button onclick="openPage('http://localhost:8081/firstpage/18.html')">18+</button>
+        <button onclick="openPage('http://localhost:8081/firstpage/romance.html')">Romantic</button>
+        <button onclick="openPage('http://localhost:8081/firstpage/family.html')">Family</button>
+        <button onclick="openPage('http://localhost:8081/eventfamiliromanceseson/index.html')">Upcoming Seasonal Events</button>
+    </div>
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!--DROPDOWN MENU-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.dropbtn {
+
+ background-color: rgb(255, 128, 192);
+
+ color: white;
+
+ padding: 16px;
+
+ font-size: 16px;
+
+ border: none;
+
+}
+
+
+
+.dropdown {
+
+ position: relative;
+
+ display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+
+ display: none;
+
+ position: absolute;
+
+ background-color: rgb(255, 128, 192);
+
+ min-width: 160px;
+
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+ z-index: 1;
+
+}
+
+
+
+.dropdown-content a {
+
+ color: rgb(255, 255, 255);
+
+ padding: 12px 16px;
+
+ text-decoration: none;
+
+ display: block;
+
+}
+
+
+
+.dropdown-content a:hover {background-color: deeppink;}
+
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+.dropdown:hover .dropbtn {background-color:deeppink;}
+
+</style>
+
+</head>
+
+<body style="background-color:white;">
+
+
+
+<h2>Hoverable Dropdown</h2>
+
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+
+
+<div class="dropdown">
+
+ <button class="dropbtn">Dropdown</button>
+
+ <div class="dropdown-content">
+
+ <a href="http://localhost:8081/firstpage/help.html">Help Center</a>
+
+ <a href="http://localhost:8081/firstpage/aboutus.html">About Us</a>
+
+ <a href="http://localhost:8081/firstpage/upcoming.html">Upcoming</a>
+
+ </div>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--star rating-->
+
+<script>
+
+ function boxClicked(category) {
+
+ alert("You clicked the " + category + " box!");
+
+ // You can add more actions or navigation here as needed.
+
+ }
+
+ <script src="script.js"></script>
+
+ <title>Rating, Comments, and Contacts</title>
+
+ <style><!--stars made in HTML-->
+
+ /* Style for sections */
+
+ section {
+
+ margin: 20px;
+
+ padding: 20px;
+
+ border: 1px solid #ccc;
+
+ background-color: #f9f9f9;
+
+ }
+
+
+
+ /* Style for headings */
+
+ h2 {
+
+ color: #333;
+
+ }
+
+
+
+ /* Style for ratings */
+
+ .rating {
+
+ font-size: 24px;
+
+ margin-bottom: 10px;
+
+ }
+
+
+
+ /* Style for comments */
+
+ .comments {
+
+ margin-top: 20px;
+
+ }
+
+
+
+ /* Style for contact information */
+
+ .contact-info {
+
+ font-weight: bold;
+
+ margin-top: 20px;
+
+ }
+
+ </style>
+
+</head>
+
+<body>
+
+	<title>Rating Box</title>
+
+ <style>
+
+ /* Style for the rating box */
+
+ .rating-box {
+
+ text-align: center;
+
+ }
+
+
+
+ .rating-title {
+
+ font-size: 20px;
+
+ margin-bottom: 10px;
+
+ }
+
+
+
+ .stars {
+
+ font-size: 24px;
+
+ }
+
+
+
+ .stars .star {
+
+ cursor: pointer;
+
+ color: gray;
+
+ }
+
+
+
+ .stars .star:hover,
+
+ .stars .star.checked {
+
+ color: gold;
+
+ }
+
+ </style>
+
+</head>
+
+<body>
+
+ <div class="rating-box">
+
+ <div class="rating-title">Rate</div>
+
+ <div class="stars">
+
+ <span class="star" onclick="rate(1)">★</span>
+
+ <span class="star" onclick="rate(2)">★</span>
+
+ <span class="star" onclick="rate(3)">★</span>
+
+ <span class="star" onclick="rate(4)">★</span>
+
+ <span class="star" onclick="rate(5)">★</span>
+
+ </div>
+
+
+
+ <!-- Submit button -->
+
+ <button onclick="submitRating()">Submit</button>
+
+ </div>
+
+
+
+ <p>Your rating: <span id="selectedRating">0</span> stars</p>
+
+
+
+ <script>
+
+ let selectedRating = 0;
+
+
+
+ function rate(stars) {
+
+ selectedRating = stars;
+
+ updateRatingDisplay();
+
+ }
+
+
+
+ function updateRatingDisplay() {
+
+ document.getElementById("selectedRating").textContent = selectedRating;
+
+ for (let i = 1; i <= 5; i++) {
+
+ const star = document.querySelector(".stars .star:nth-child(" + i + ")");
+
+ if (i <= selectedRating) {
+
+ star.classList.add("checked");
+
+ } else {
+
+ star.classList.remove("checked");
+
+ }
+
+ }
+
+ }
+
+
+
+ function submitRating() {
+
+ // You can send the selectedRating to your server or perform any other action here
+
+ alert("Rating submitted: " + selectedRating);
+
+ }
+
+ </script>
+
+ </script>
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+<!--comment-->
+
+<!-- The text field -->
+
+<input type="text" value="write you comment here...." id="myInput">
+
+
+
+<!-- The button used to copy the text -->
+
+<button onclick="myFunction()">submit comment</button>
+
+
+
+
+
+
+
+<h1>contact information</h1>
+
+<strong>Phone: +1 (123) 456-7890</strong> <br>
+
+<strong>Address: 123 Main St, City, Country</strong>
+
+
+
+
+
+
+
+
+
+
+
+<!--emil link-->
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Email Link</title>
+
+</head>
+
+<body>
+
+ <p>Contact us via email: <a href="mailto:example@example.com">example@example.com</a></p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FADING BUTTON FOR THE CATAGORIES-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.btn {
+
+ background-color:rgb(255, 128, 192) ;
+
+ border: none;
+
+ color: white;
+
+ padding: 16px 32px;
+
+ text-align: center;
+
+ font-size: 16px;
+
+ margin: 4px 2px;
+
+ transition: 0.3s;
+
+}
+
+
+
+.btn:hover {
+
+ background-color:deeppink;
+
+ color: white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<button class="btn">open for terms and agreements</button>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!--blubackground-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body, html {
+
+ height: 100%;
+
+ margin: 0;
+
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+* {
+
+ box-sizing: border-box;
+
+}
+
+
+
+.bg-image {
+
+ /* The image used */
+
+ background-image: url("");
+
+ 
+
+ /* Add the blur effect */
+
+ filter: blur(8px);
+
+ -webkit-filter: blur(8px);
+
+ 
+
+ /* Full height */
+
+ height: 100%; 
+
+ 
+
+ /* Center and scale the image nicely */
+
+ background-position: center;
+
+ background-repeat: no-repeat;
+
+ background-size: cover;
+
+}
+
+
+
+/* Position text in the middle of the page/image */
+
+.bg-text {
+
+ background-color: rgb(0,0,0); /* Fallback color */
+
+ background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+
+ color: white;
+
+ font-weight: bold;
+
+ border: 3px solid #f1f1f1;
+
+ position: absolute;
+
+ top: 50%;
+
+ left: 50%;
+
+ transform: translate(-50%, -50%);
+
+ z-index: 2;
+
+ width: 80%;
+
+ padding: 20px;
+
+ text-align: center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="bg-image"></div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
+

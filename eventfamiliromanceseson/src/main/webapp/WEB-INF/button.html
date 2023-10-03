@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Image</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Times New Roman", serif;
+            font-size: 20px;
+            color: #000000;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="vallefair2.jpeg" alt="Hello Image">
+        <div class="text-overlay">Hello</div>
+    </div>
+</body>
+</html>
+
+
+
+
+

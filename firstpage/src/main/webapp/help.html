@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Page Title</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* CSS styles for the transition link */
+    .transition_link {
+      font-family: arial, sans-serif;
+      padding: 8px;
+      margin: 4px;
+      color: white;
+      background-color: deeppink;
+      border-style: outset;
+      border-radius: 8px;
+      text-decoration: none;
+      width: 8em;
+      display: inline-block;
+      font-size: medium;
+      transition: all 2s; /* Apply the transition to all properties */
+    }
+
+    .transition_link:hover {
+      color: lightpink;
+      background-color: white;
+      width: 16em;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header"></h1>
+
+  <a href="#" class="transition_link">Minnesota Quest</a>
+
+  <p id="butterfly">&#x1F98B;</p>
+
+  <script src="src/script.js"></script>
+
+  <style>
+
+
+<style>
+
+/* Style the body */
+
+body {
+
+ font-family: Arial;
+
+ margin: 0;
+
+}
+
+
+
+/* Header/Logo Title */
+
+.header {
+
+ padding: 60px;
+
+ text-align: center;
+
+ background: hotpink;
+
+ color: white;
+
+ font-size: 30px;
+
+}
+
+
+
+/* Page Content */
+
+.content {padding:20px;}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="header">
+
+ <h1>Help Center</h1>
+
+ <p>-----------</p>
+
+</div>
+
+
+
+<div class="content">
+
+
+
+<h2>Getting Started</h2>
+
+<h3>Welcome to our platform! Here's how to get started:</h3>
+
+
+
+<p>Step 1: Create an account.</p>
+
+<p>Step 2: Explore our features.</p>
+
+<p>Step 3: Get help if you have questions.</p>
+
+
+
+<h2>Account Management</h2>
+
+<h3>Learn how to manage your account:</h3>
+
+
+
+<p>Updating Profile: Edit your profile information.</p>
+
+<p>Password Reset: Forgot your password? Reset it here.</p>
+
+<p>Privacy Settings: Adjust your privacy preferences.</p>
+
+<h2>FAQs</h2>
+
+<h3>Frequently Asked Questions:</h3>
+
+
+
+<p>How do I create an account?</p>
+
+<p>What are the payment options?</p>
+
+<p>How can I contact support?</p>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--message -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+
+ box-sizing: border-box;
+
+}
+
+
+
+input[type=text], select, textarea {
+
+ width: 80%;
+
+ padding: 12px;
+
+ border: 1px solid white;
+
+ border-radius: 4px;
+
+ resize: vertical;
+
+}
+
+
+
+label {
+
+ padding: 12px 12px 12px 0;
+
+ display: inline-block;
+
+}
+
+ 
+
+input[type=submit] {
+
+ background-color:white;
+
+ color: rgb(255, 128, 192);
+
+ padding: 12px 20px;
+
+ border: none;
+
+ border-radius: 4px;
+
+ cursor: pointer;
+
+ float: right;
+
+}
+
+
+
+input[type=submit]:hover {
+
+ background-color: rgb(255, 128, 192);
+
+}
+
+
+
+.container {
+
+ border-radius: 5px;
+
+ background-color:white;
+
+ padding: 20px;
+
+}
+
+
+
+.col-25 {
+
+ float: left;
+
+ width: 23%;
+
+ margin-top: 6px;
+
+}
+
+
+
+.col-75 {
+
+ float: left;
+
+ width: 75%;
+
+ margin-top: 6px;
+
+}
+
+
+
+/* Clear floats after the columns */
+
+.row:after {
+
+ content: "";
+
+ display: table;
+
+ clear: both;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+
+ .col-25, .col-75, input[type=submit] {
+
+ width: 100%;
+
+ margin-top: 0;
+
+ }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h2>Help Center</h2>
+
+<p> How can we help?</p>
+
+
+
+<div class="container">
+
+ <form action="/action_page.php">
+
+ <div class="row">
+
+ <div class="col-25">
+
+ <label for="fname">First Name</label>
+
+ </div>
+
+ <div class="col-75">
+
+ <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+ </div>
+
+ </div>
+
+ <div class="row">
+
+ <div class="col-25">
+
+ <label for="lname">Last Name</label>
+
+ </div>
+
+ <div class="col-75">
+
+ <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+ </div>
+
+ </div>
+
+ <div class="row">
+
+ <div class="col-25">
+
+ <label for="country">Country</label>
+
+ </div>
+
+ <div class="col-75">
+
+ <select id="country" name="country">
+
+ <option value="australia">Australia</option>
+
+ <option value="canada">Canada</option>
+
+ <option value="usa">USA</option>
+
+ </select>
+
+ </div>
+
+ </div>
+
+ <div class="row">
+
+ <div class="col-25">
+
+ <label for="subject">Subject</label>
+
+ </div>
+
+ <div class="col-75">
+
+ <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+ </div>
+
+ </div>
+
+ <div class="row">
+
+ <input type="submit" value="Submit">
+
+ </div>
+
+ </form>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--SOCIAL MEDIA LOGIN BUT CONNECT IT TO THE ICONS-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+* {
+
+ box-sizing: border-box;
+
+}
+
+
+
+/* style the container */
+
+.container {
+
+ position: relative;
+
+ border-radius: 5px;
+
+ background-color: rgb(255, 128, 192);
+
+ padding: 20px 0 30px 0;
+
+} 
+
+
+
+/* style inputs and link buttons */
+
+input,
+
+.btn {
+
+ width: 100%;
+
+ padding: 12px;
+
+ border: none;
+
+ border-radius: 4px;
+
+ margin: 5px 0;
+
+ opacity: 0.85;
+
+ display: inline-block;
+
+ font-size: 17px;
+
+ line-height: 20px;
+
+ text-decoration: none; /* remove underline from anchors */
+
+}
+
+
+
+input:hover,
+
+.btn:hover {
+
+ opacity: 1;
+
+}
+
+
+
+/* add appropriate colors to fb, twitter and google buttons */
+
+.fb {
+
+ background-color: #3B5998;
+
+ color: white;
+
+}
+
+
+
+.twitter {
+
+ background-color: #55ACEE;
+
+ color: white;
+
+}
+
+
+
+.google {
+
+ background-color: #dd4b39;
+
+ color: white;
+
+}
+
+<!--the outside of the sumbit button-->
+
+/* style the submit button */
+
+input[type=submit] {
+
+ background-color: white);
+
+ color: white;
+
+ cursor: pointer;
+
+}
+
+
+
+input[type=submit]:hover {
+
+ background-color:deeppink;
+
+}
+
+
+
+/* Two-column layout */
+
+.col {
+
+ float: left;
+
+ width: 50%;
+
+ margin: auto;
+
+ padding: 0 50px;
+
+ margin-top: 6px;
+
+}
+
+
+
+/* Clear floats after the columns */
+
+.row:after {
+
+ content: "";
+
+ display: table;
+
+ clear: both;
+
+}
+
+
+
+/* vertical line */
+
+.vl {
+
+ position: absolute;
+
+ left: 50%;
+
+ transform: translate(-50%);
+
+ border: 2px white;
+
+ height: 175px;
+
+}
+
+
+
+/* text inside the vertical line */
+
+.vl-innertext {
+
+ position: absolute;
+
+ top: 50%;
+
+ transform: translate(-50%, -50%);
+
+ background-color:white;
+
+ border: 1px white;
+
+ border-radius: 50%;
+
+ padding: 8px 10px;
+
+}
+
+
+
+/* hide some text on medium and large screens */
+
+.hide-md-lg {
+
+ display: none;
+
+}
+
+
+
+
+
+/*sumbit background*/
+
+/* bottom container */
+
+.bottom-container {
+
+ text-align: center;
+
+ background-color: white;
+
+ border-radius: 0px 0px 4px 4px;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 650px) {
+
+ .col {
+
+ width: 100%;
+
+ margin-top: 0;
+
+ }
+
+ /* hide the vertical line */
+
+ .vl {
+
+ display: none;
+
+ }
+
+ /* show the hidden text on small screens */
+
+ .hide-md-lg {
+
+ display: block;
+
+ text-align: center;
+
+ }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--social media login-->
+
+<h2>keep up with us!!</h2>
+
+<p>MN Quest social media</p>
+
+
+
+<div class="container">
+
+ <form action="/action_page.php">
+
+ <div class="row">
+
+ <h2 style="text-align:center">Login with Social Media or Manually</h2>
+
+ <div class="vl">
+
+ <span class="vl-innertext">or</span>
+
+ </div>
+
+
+
+ <div class="col">
+
+ <a href="#" class="fb btn">
+
+ <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+
+ </a>
+
+ <a href="#" class="twitter btn">
+
+ <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+
+ </a>
+
+ <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+
+ </i> Login with Google+
+
+ </a>
+
+ </div>
+
+
+
+ <div class="col">
+
+ <div class="hide-md-lg">
+
+ <p>sign in manually:</p>
+
+ </div>
+
+
+
+ <input type="text" name="username" placeholder="Username" required>
+
+ <input type="password" name="password" placeholder="Password" required>
+
+ <input type="submit" value="Login">
+
+ </div>
+
+ 
+
+ </div>
+
+ </form>
+
+</div>
+
+
+
+<div class="bottom-container">
+
+ <div class="row">
+
+ <div class="col">
+
+ <a href="#" style="color:white" class="btn">Sign up</a>
+
+ </div>
+
+ <div class="col">
+
+ <a href="#" style="color:white" class="btn">Forgot password?</a>
+
+ </div>
+
+ </div>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--chat box-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+
+ background-color:deeppink;
+
+ color: rgb(255, 128, 192);
+
+ padding: 16px 20px;
+
+ border: none;
+
+ cursor: pointer;
+
+ opacity: 0.8;
+
+ position: fixed;
+
+ bottom: 23px;
+
+ right: 28px;
+
+ width: 280px;
+
+}
+
+
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+
+ display: none;
+
+ position: fixed;
+
+ bottom: 0;
+
+ right: 15px;
+
+ border: 3px rgb(255, 128, 192);
+
+ z-index: 9;
+
+}
+
+
+
+/*chat box color*/
+
+/* Add styles to the form container */
+
+.form-container {
+
+ max-width: 300px;
+
+ padding: 10px;
+
+ background-color: lightgrey;
+
+}
+
+
+
+/* Full-width textarea */
+
+.form-container textarea {
+
+ width: 100%;
+
+ padding: 15px;
+
+ margin: 5px 0 22px 0;
+
+ border: none;
+
+ background:white;
+
+ resize: none;
+
+ min-height: 200px;
+
+}
+
+
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+
+ background-color:white;
+
+ outline: none;
+
+}
+
+
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+
+ background-color: #04AA6D;
+
+ color: white;
+
+ padding: 16px 20px;
+
+ border: none;
+
+ cursor: pointer;
+
+ width: 100%;
+
+ margin-bottom:10px;
+
+ opacity: 0.8;
+
+}
+
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+
+ background-color: red;
+
+}
+
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover, .open-button:hover {
+
+ opacity: 1;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h2>customer service chat box</h2>
+
+<p>Report the problem in the chat box.</p>
+
+<p>Please make your message detailed so we can help you conveniently.</p>
+
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+
+
+<div class="chat-popup" id="myForm">
+
+ <form action="/action_page.php" class="form-container">
+
+ <h1>Chat</h1>
+
+
+
+ <label for="msg"><b>Message</b></label>
+
+ <textarea placeholder="Type message.." name="msg" required></textarea>
+
+
+
+ <button type="submit" class="btn">Send</button>
+
+ <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+ </form>
+
+</div>
+
+
+
+<script>
+
+function openForm() {
+
+ document.getElementById("myForm").style.display = "block";
+
+}
+
+
+
+function closeForm() {
+
+ document.getElementById("myForm").style.display = "none";
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--delete account button-->
+
+<!DOCTYPE html>
+
+<html>
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+
+
+/* Set a style for all buttons */
+
+button {
+
+ background-color: #04AA6D;
+
+ color: white;
+
+ padding: 14px 20px;
+
+ margin: 8px 0;
+
+ border: none;
+
+ cursor: pointer;
+
+ width: 100%;
+
+ opacity: 0.9;
+
+}
+
+
+
+button:hover {
+
+ opacity:1;
+
+}
+
+
+
+/* Float cancel and delete buttons and add an equal width */
+
+.cancelbtn, .deletebtn {
+
+ float: left;
+
+ width: 50%;
+
+}
+
+
+
+/* Add a color to the cancel button */
+
+.cancelbtn {
+
+ background-color: #ccc;
+
+ color: black;
+
+}
+
+
+
+/* Add a color to the delete button */
+
+.deletebtn {
+
+ background-color: #f44336;
+
+}
+
+
+
+/* Add padding and center-align text to the container */
+
+.container {
+
+ padding: 16px;
+
+ text-align: center;
+
+}
+
+
+
+/* The Modal (background) */
+
+.modal {
+
+ display: none; /* Hidden by default */
+
+ position: fixed; /* Stay in place */
+
+ z-index: 1; /* Sit on top */
+
+ left: 0;
+
+ top: 0;
+
+ width: 100%; /* Full width */
+
+ height: 100%; /* Full height */
+
+ overflow: auto; /* Enable scroll if needed */
+
+ background-color: #474e5d;
+
+ padding-top: 50px;
+
+}
+
+
+
+/* Modal Content/Box */
+
+.modal-content {
+
+ background-color: #fefefe;
+
+ margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+
+ border: 1px solid #888;
+
+ width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+
+
+/* Style the horizontal ruler */
+
+hr {
+
+ border: 1px solid #f1f1f1;
+
+ margin-bottom: 25px;
+
+}
+
+ 
+
+/* The Modal Close Button (x) */
+
+.close {
+
+ position: absolute;
+
+ right: 35px;
+
+ top: 15px;
+
+ font-size: 40px;
+
+ font-weight: bold;
+
+ color: #f1f1f1;
+
+}
+
+
+
+.close:hover,
+
+.close:focus {
+
+ color: #f44336;
+
+ cursor: pointer;
+
+}
+
+
+
+/* Clear floats */
+
+.clearfix::after {
+
+ content: "";
+
+ clear: both;
+
+ display: table;
+
+}
+
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+@media screen and (max-width: 300px) {
+
+ .cancelbtn, .deletebtn {
+
+ width: 100%;
+
+ }
+
+}
+
+</style>
+
+<body>
+
+
+
+<h2>Delete Account</h2>
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'">Delete Acount</button>
+
+
+
+<div id="id01" class="modal">
+
+ <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+ <form class="modal-content" action="/action_page.php">
+
+ <div class="container">
+
+ <h1>Delete Account</h1>
+
+ <p>Are you sure you want to delete your account?</p>
+
+ 
+
+ <div class="clearfix">
+
+ <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+ <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+
+ </div>
+
+ </div>
+
+ </form>
+
+</div>
+
+
+
+<script>
+
+// Get the modal
+
+var modal = document.getElementById('id01');
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+
+ if (event.target == modal) {
+
+ modal.style.display = "none";
+
+ }
+
+}
+
+
+
+
+
+
+
+/*bottom picture*/
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage">
+
+
+
+<!-- Image of location/map -->
+
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage">
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Background photo -->
+
+<div class="w3-display-container bgimg2">
+
+ <div class="w3-display-middle w3-text-white w3-center">
+
+ <h1 class="w3-jumbo"></h1><br>
+
+ <h2>Of course..</h2>
+
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--sliding picture-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
+body {font-size: 16px;}
+
+img {margin-bottom: -8px;}
+
+.mySlides {display: none;}
+
+</style>
+
+</head>
+
+
+
+
+
+<!-- Header with Slideshow -->
+
+<header class="w3-display-container w3-center">
+
+ 
+
+ <div class="mySlides w3-animate-opacity">
+
+ <img class="w3-image" src="flower.jpg" alt="Image 1" style="min-width:500px" width="700" height="350">
+
+ <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+
+ 
+
+ 
+
+ <hr class="w3-opacity">
+
+ 
+
+ 
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="mySlides w3-animate-opacity">
+
+ <img class="w3-image" src="ballon.jpg" alt="Image 2" style="min-width:500px" width="500" height="350">
+
+ <
+
+ 
+
+ 
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="mySlides w3-animate-opacity">
+
+ <img class="w3-image" src="club.jpg" alt="Image 3" style="min-width:500px" width="500" height="350">
+
+ <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+
+ 
+
+ 
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+
+ <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+
+</header>
+
+
+
+ 
+
+
+
+<script>
+
+// Slideshow
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+
+
+function plusDivs(n) {
+
+ showDivs(slideIndex += n);
+
+}
+
+
+
+function showDivs(n) {
+
+ var i;
+
+ var x = document.getElementsByClassName("mySlides");
+
+ if (n > x.length) {slideIndex = 1}
+
+ if (n < 1) {slideIndex = x.length}
+
+ for (i = 0; i < x.length; i++) {
+
+ x[i].style.display = "none"; 
+
+ }
+
+ x[slideIndex-1].style.display = "block"; 
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
